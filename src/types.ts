@@ -7,7 +7,6 @@ export type candidate = {
     commuication: number;
     "sitaution-handling": number;
   };
-  shortlisted: string;
   about: string;
   experience: string;
   hobbies: string;

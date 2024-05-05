@@ -9,7 +9,6 @@
         "commuication": 8,
         "sitaution-handling": 9
       },
-      "shortlisted": "yes",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
@@ -25,7 +24,7 @@
         "commuication": 1,
         "sitaution-handling": 8
       },
-      "shortlisted": "",
+
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
@@ -40,7 +39,7 @@
         "commuication": 8,
         "sitaution-handling": 8
       },
-      "shortlisted": "",
+
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
@@ -55,7 +54,6 @@
         "commuication": 8,
         "sitaution-handling": 8
       },
-      "shortlisted": "yes",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
@@ -70,7 +68,7 @@
         "commuication": 4,
         "sitaution-handling": 3
       },
-      "shortlisted": "",
+
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
@@ -85,12 +83,11 @@
         "commuication": 6,
         "sitaution-handling": 7
       },
-      "shortlisted": "",
+
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     }
-  ],
-  "shortlistedCandidates": [{ "condidateEmail": "narendrakajla77@gmail.com" }]
+  ]
 }

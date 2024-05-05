@@ -24,10 +24,7 @@ const AssignmentPage = () => {
   useEffect(() => {
     const shortlistedCandidates = localStorage.getItem("shortlistedCandidates");
     if (!shortlistedCandidates) {
-      localStorage.setItem(
-        "shortlistedCandidates",
-        JSON.stringify(["narendrakajla77@gmail.com"]),
-      );
+      localStorage.setItem("shortlistedCandidates", JSON.stringify([]));
     }
   }, []);
 
