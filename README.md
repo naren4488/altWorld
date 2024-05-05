@@ -5,7 +5,7 @@ details and scores. Showing the detailed candidate profiles with individual asse
 
 Website live link - https://alt-world-narendra-kajlas-projects.vercel.app/
 
-<!-- Technologies & Data  -->
+# Technologies & Data
 
 React + Vite - for frontend
 TypeScript - as programming langauge inside react
@@ -16,7 +16,7 @@ Data - using dummy data stored in file - src/mockDB/mockCandidateData.json
 
 localStorage - the browser's localStorage is used to store the list of shortlisted candidate emails.
 
-<!-- Setup Guide -->
+# Setup Guide
 
 To setup & run this app in local, clone the git repository : https://github.com/naren4488/altWorld.git
 
@@ -35,7 +35,7 @@ $ npm run build
 to preview after build :
 $ npm run preview
 
-% Folder strucutre
+# Folder strucutre
 
 - package.json - contains all the details about scripts, dependencies & devDependencies
 - public - contains assets of dummy data (images of candidates)
@@ -45,7 +45,7 @@ $ npm run preview
 - src/main.tsx - starting file of project
 - src.app.tsx - starting component of project
 
-% Frontend UI Discription
+# Frontend UI Discription
 
 The application contains a single page AssignmentPage which contains mainly Header, Footer, AssignmentDetailsCard, CandidateProfileCard components
 
@@ -58,11 +58,12 @@ Main content - consists of 3 different sections
 2. AssignmentDetailsCard - to display assignment details & candidates who have done the assignment. Also here two tabs are implemented to show the candidates as per to-review state or shortlisted candidates state.
 3. CandidateProfileCard - it is used to dislay the profile of candidates including their score and video submission. Also at bottom a shortlist button is implemented to shortlist a candidate or to remove him/her from shortlisted list. This shortlisted data is stored in localStorage for demonstration purpose. Here the shortlisted data refers to list of email of candidates who are shortlisted.
 
-% Working of project
+# Working of project
 
 1. On app load, by default AssignmentPage will load with to-review tab selected for candidate list & first candidate is selected by default to detailed profile display.
 2. On changing tab to shortlisted, the list of shortlisted candidates will be displayed if there are shortlisted candidates, if not then it will show an message that no any shortlisted candidates are there.
 3. From candidate profile section, candidate's details can be read & decision can be made to shortlist or not. Also if already shortlisted, then also a reverse decision can be made to remove that candidate from shortlisted candidates.
 
-% Note on responsive design
+# Note on responsive design
+
 For now the UI is made only for laptop view, soon it will be updated to mobile view as well.
