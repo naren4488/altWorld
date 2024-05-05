@@ -15,13 +15,14 @@
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
+
     {
-      "fullName": "Yogeshwar Gaur",
-      "imgURL": "/public/assets/u1.jpeg",
-      "email": "yogeshwar77test@gmail.com",
+      "fullName": "Mukul Kumar",
+      "imgURL": "/public/assets/u2.jpeg",
+      "email": "mukul77test@gmail.com",
       "score": {
-        "behavioural": 9,
-        "commuication": 8,
+        "behavioural": 3,
+        "commuication": 1,
         "sitaution-handling": 8
       },
       "shortlisted": "",
@@ -31,13 +32,13 @@
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
-      "fullName": "Mukul Kumar",
-      "imgURL": "/public/assets/u2.jpeg",
-      "email": "mukul77test@gmail.com",
+      "fullName": "Yogeshwar Gaur",
+      "imgURL": "/public/assets/u1.jpeg",
+      "email": "yogeshwar77test@gmail.com",
       "score": {
-        "behavioural": 3,
-        "commuication": 6,
-        "sitaution-handling": 2
+        "behavioural": 9,
+        "commuication": 8,
+        "sitaution-handling": 8
       },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",

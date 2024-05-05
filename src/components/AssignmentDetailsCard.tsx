@@ -21,10 +21,18 @@ const AssignmentDetailsCard = ({
     if (currentTab === "review") {
       return candidateData;
     } else {
-      const shortlistedCandidates = candidateData.filter(
-        (candidate) => candidate.shortlisted === "yes",
-      );
-      return shortlistedCandidates;
+      const localshortList = localStorage.getItem("shortlistedCandidates");
+      if (localshortList) {
+        const localshortListEmails = JSON.parse(localshortList);
+        if (localshortListEmails.length > 0) {
+          const shortlistedCandidates = candidateData.filter((candidate) =>
+            localshortListEmails.includes(candidate.email),
+          );
+          return shortlistedCandidates;
+        }
+      } else {
+        return [];
+      }
     }
   };
 
@@ -36,8 +44,13 @@ const AssignmentDetailsCard = ({
     const candidateList = getCandidatesAsPerTabSelection(
       candidateDataBase.candidateData,
     );
-    setSelectedCandidateEmail(candidateList[0].email);
-    setCandidateList(candidateList);
+    if (candidateList) {
+      setSelectedCandidateEmail(candidateList[0].email);
+      setCandidateList(candidateList);
+    } else {
+      setSelectedCandidateEmail("");
+      setCandidateList([]);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab]);
 
@@ -93,14 +106,22 @@ const AssignmentDetailsCard = ({
             <p>SCORE</p>
           </div>
           <div className="">
-            {candidateList.map((candidate) => (
-              <CandidateCard
-                key={candidate.email}
-                candidate={candidate}
-                selectedCandidateEmail={selectedCandidateEmail}
-                onSelect={setSelectedCandidateEmail}
-              />
-            ))}
+            {candidateList ? (
+              candidateList.length ? (
+                candidateList.map((candidate) => (
+                  <CandidateCard
+                    key={candidate.email}
+                    candidate={candidate}
+                    selectedCandidateEmail={selectedCandidateEmail}
+                    onSelect={setSelectedCandidateEmail}
+                  />
+                ))
+              ) : (
+                <p className="  text-orange-500">No shortlisted candidates</p>
+              )
+            ) : (
+              <p className=" text-orange-500">No shortlisted candidates</p>
+            )}
           </div>
         </CardContent>
       </Card>

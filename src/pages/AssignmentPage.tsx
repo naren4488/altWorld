@@ -3,7 +3,7 @@ import CandidateProfileCard from "@/components/CandidateProfileCard";
 import DesktopSidebar from "@/components/DesktopSidebar";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import candidateDabase from "./../mockDB/mockCandidateData.json";
 import { candidate } from "@/types";
 
@@ -11,8 +11,6 @@ const AssignmentPage = () => {
   const [selectedCandidateEmail, setSelectedCandidateEmail] = useState(
     "narendrakajla77@gmail.com",
   );
-
-  // console.log(selectedCandidateEmail);
 
   const getCurrentCandidateData = (
     currentCandidateEmail: string,
@@ -22,6 +20,16 @@ const AssignmentPage = () => {
     );
     return currentCadidate;
   };
+
+  useEffect(() => {
+    const shortlistedCandidates = localStorage.getItem("shortlistedCandidates");
+    if (!shortlistedCandidates) {
+      localStorage.setItem(
+        "shortlistedCandidates",
+        JSON.stringify(["narendrakajla77@gmail.com"]),
+      );
+    }
+  }, []);
 
   return (
     <div className="flex min-h-screen gap-6 px-8 py-4">

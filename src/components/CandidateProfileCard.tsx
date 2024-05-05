@@ -3,18 +3,67 @@ import ScoreDetails from "./ScoreDetails";
 import { Button } from "./ui/button";
 import CandidateVideoCard from "./CandidateVideoCard";
 import { candidate as TypeCandidate } from "@/types";
+import { useEffect, useState } from "react";
 
 type Props = {
   currentCandidate: TypeCandidate | undefined;
 };
 
 const CandidateProfileCard = ({ currentCandidate }: Props) => {
+  const [isShortListed, setIsShortListed] = useState(false);
   const getScore = (candidate: TypeCandidate): number => {
     const totalScore =
       candidate.score.behavioural +
       candidate.score.commuication +
       candidate.score["sitaution-handling"];
     return Math.ceil((totalScore / 30) * 100);
+  };
+
+  const isCurrentCandidateShortlisted = (currentCandidate: TypeCandidate) => {
+    const localshortList = localStorage.getItem("shortlistedCandidates");
+    if (localshortList) {
+      const localshortListEmails = JSON.parse(localshortList);
+      if (localshortListEmails.length > 0) {
+        return localshortListEmails.includes(currentCandidate.email);
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    if (currentCandidate) {
+      setIsShortListed(isCurrentCandidateShortlisted(currentCandidate));
+    }
+  }, [currentCandidate]);
+
+  const updateShortlistStatus = (currentCandidate: TypeCandidate) => {
+    const localshortList = localStorage.getItem("shortlistedCandidates");
+    if (localshortList) {
+      const localshortListEmails: string[] = JSON.parse(localshortList);
+      if (isShortListed) {
+        const updatedLocalshortListEmails = localshortListEmails.filter(
+          (email) => email !== currentCandidate.email,
+        );
+        console.log(updatedLocalshortListEmails);
+        localStorage.setItem(
+          "shortlistedCandidates",
+          JSON.stringify(updatedLocalshortListEmails),
+        );
+        setIsShortListed(false);
+        // window.location.reload();
+      } else {
+        localStorage.setItem(
+          "shortlistedCandidates",
+          JSON.stringify([...localshortListEmails, currentCandidate.email]),
+        );
+        setIsShortListed(true);
+      }
+    } else {
+      console.log("no items in localStorage, please check & re-try");
+    }
   };
 
   return (
@@ -87,11 +136,10 @@ const CandidateProfileCard = ({ currentCandidate }: Props) => {
               </div>
               <Button
                 variant={"ghost"}
-                className={`mx-auto w-4/5  text-white  hover:text-white ${currentCandidate.shortlisted ? " bg-green-500 hover:bg-green-600" : "  bg-[#50D1C5] hover:bg-[#4ac1b5]"}`}
+                className={`mx-auto w-4/5  text-white  hover:text-white ${isShortListed ? " bg-green-500 hover:bg-green-600" : "  bg-[#50D1C5] hover:bg-[#4ac1b5]"}`}
+                onClick={() => updateShortlistStatus(currentCandidate)}
               >
-                {currentCandidate.shortlisted
-                  ? "SHORTLISTED ALREADY (Remove)"
-                  : "SHORTLIST"}
+                {isShortListed ? "SHORTLISTED ALREADY (Remove)" : "SHORTLIST"}
               </Button>
             </div>
             <div className="flex-1 ">
