@@ -35,12 +35,12 @@ const AssignmentPage = () => {
       </div>
       <div className="flex flex-1 flex-col">
         <Header />
-        <div className="flex flex-1 gap-3">
+        <div className="mb-4 flex flex-1 gap-3 max-sm:flex-col">
           <AssignmentDetailsCard
             selectedCandidateEmail={selectedCandidateEmail}
             setSelectedCandidateEmail={setSelectedCandidateEmail}
           />
-          <div className="w-2/3 max-sm:hidden">
+          <div className="sm:w-2/3 ">
             <CandidateProfileCard
               currentCandidate={getCurrentCandidateData(selectedCandidateEmail)}
             />

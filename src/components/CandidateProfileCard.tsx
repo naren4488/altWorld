@@ -76,7 +76,7 @@ const CandidateProfileCard = ({ currentCandidate }: Props) => {
     <div className="">
       <Card>
         {currentCandidate && (
-          <CardContent className="flex gap-4 py-2">
+          <CardContent className="flex gap-4 py-2 max-sm:flex-col">
             <div className=" flex flex-1 flex-col gap-5">
               <div className={`flex items-center justify-between py-2 `}>
                 <div className="flex items-center gap-2">
@@ -145,7 +145,7 @@ const CandidateProfileCard = ({ currentCandidate }: Props) => {
                 className={`mx-auto w-4/5  text-white  hover:text-white ${isShortListed ? " bg-green-500 hover:bg-green-600" : "  bg-[#50D1C5] hover:bg-[#4ac1b5]"}`}
                 onClick={() => updateShortlistStatus(currentCandidate)}
               >
-                {isShortListed ? "SHORTLISTED ALREADY (Remove)" : "SHORTLIST"}
+                {isShortListed ? "Remove from shortlist" : "SHORTLIST"}
               </Button>
             </div>
             <div className="flex-1 ">
