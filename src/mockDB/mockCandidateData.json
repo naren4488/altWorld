@@ -2,7 +2,7 @@
   "candidateData": [
     {
       "fullName": "Narendra Kajla",
-      "imgURL": "/public/assets/less-size-photo.jpg",
+      "imgURL": "/assets/less-size-photo.jpg",
       "email": "narendrakajla77@gmail.com",
       "score": {
         "behavioural": 9,
@@ -18,7 +18,7 @@
 
     {
       "fullName": "Mukul Kumar",
-      "imgURL": "/public/assets/u2.jpeg",
+      "imgURL": "/assets/u2.jpeg",
       "email": "mukul77test@gmail.com",
       "score": {
         "behavioural": 3,
@@ -33,7 +33,7 @@
     },
     {
       "fullName": "Yogeshwar Gaur",
-      "imgURL": "/public/assets/u1.jpeg",
+      "imgURL": "/assets/u1.jpeg",
       "email": "yogeshwar77test@gmail.com",
       "score": {
         "behavioural": 9,
@@ -48,7 +48,7 @@
     },
     {
       "fullName": "Salonee Pandey",
-      "imgURL": "/public/assets/u5.jpeg",
+      "imgURL": "/assets/u5.jpeg",
       "email": "salonee77test@gmail.com",
       "score": {
         "behavioural": 8,
@@ -63,7 +63,7 @@
     },
     {
       "fullName": "Aryan Kumawat",
-      "imgURL": "/public/assets/u4.webp",
+      "imgURL": "/assets/u4.webp",
       "email": "aryan77test@gmail.com",
       "score": {
         "behavioural": 5,
@@ -78,7 +78,7 @@
     },
     {
       "fullName": "Ashu Sharma",
-      "imgURL": "/public/assets/u6.jpeg",
+      "imgURL": "/assets/u6.jpeg",
       "email": "ashu77test@gmail.com",
       "score": {
         "behavioural": 8,

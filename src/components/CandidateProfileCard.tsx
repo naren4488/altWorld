@@ -37,6 +37,12 @@ const CandidateProfileCard = ({ currentCandidate }: Props) => {
     if (currentCandidate) {
       setIsShortListed(isCurrentCandidateShortlisted(currentCandidate));
     }
+  }, []);
+
+  useEffect(() => {
+    if (currentCandidate) {
+      setIsShortListed(isCurrentCandidateShortlisted(currentCandidate));
+    }
   }, [currentCandidate]);
 
   const updateShortlistStatus = (currentCandidate: TypeCandidate) => {
