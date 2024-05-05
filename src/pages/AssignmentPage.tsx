@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 const AssignmentPage = () => {
   return (
     <div className="flex min-h-screen gap-6 px-8 py-4">
-      <div className="w-1/6  max-sm:hidden">
+      <div className="w-1/6 max-sm:hidden">
         <DesktopSidebar />
       </div>
       <div className="flex flex-1 flex-col">
