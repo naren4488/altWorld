@@ -1,3 +1,5 @@
+import AssignmentDetailsCard from "@/components/AssignmentDetailsCard";
+import CandidateProfileCard from "@/components/CandidateProfileCard";
 import DesktopSidebar from "@/components/DesktopSidebar";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -10,7 +12,12 @@ const AssignmentPage = () => {
       </div>
       <div className="flex flex-1 flex-col">
         <Header />
-        <div className="flex-1">Main content</div>
+        <div className="flex flex-1">
+          <AssignmentDetailsCard />
+          <div className="w-2/3 max-sm:hidden">
+            <CandidateProfileCard />
+          </div>
+        </div>
         <Footer />
       </div>
     </div>

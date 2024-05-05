@@ -2,73 +2,91 @@
   "candidateData": [
     {
       "fullName": "Narendra Kajla",
+      "imgURL": "/public/assets/less-size-photo.jpg",
       "email": "narendrakajla77@gmail.com",
-      "score": [
-        { "behavioural": "9", "commuication": "8", "sitaution-handling": "9" }
-      ],
+      "score": {
+        "behavioural": 9,
+        "commuication": 8,
+        "sitaution-handling": 9
+      },
       "shortlisted": "yes",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
       "fullName": "Yogeshwar Gaur",
+      "imgURL": "/public/assets/u1.jpeg",
       "email": "yogeshwar77test@gmail.com",
-      "score": [
-        { "behavioural": "9", "commuication": "8", "sitaution-handling": "8" }
-      ],
+      "score": {
+        "behavioural": 9,
+        "commuication": 8,
+        "sitaution-handling": 8
+      },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
-      "fullName": "Jitesh Chaudhary",
-      "email": "jitesh77test@gmail.com",
-      "score": [
-        { "behavioural": "3", "commuication": "6", "sitaution-handling": "2" }
-      ],
+      "fullName": "Mukul Kumar",
+      "imgURL": "/public/assets/u2.jpeg",
+      "email": "mukul77test@gmail.com",
+      "score": {
+        "behavioural": 3,
+        "commuication": 6,
+        "sitaution-handling": 2
+      },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
       "fullName": "Salonee Pandey",
+      "imgURL": "/public/assets/u5.jpeg",
       "email": "salonee77test@gmail.com",
-      "score": [
-        { "behavioural": "9", "commuication": "8", "sitaution-handling": "8" }
-      ],
+      "score": {
+        "behavioural": 8,
+        "commuication": 8,
+        "sitaution-handling": 8
+      },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
       "fullName": "Aryan Kumawat",
+      "imgURL": "/public/assets/u4.webp",
       "email": "aryan77test@gmail.com",
-      "score": [
-        { "behavioural": "5", "commuication": "4", "sitaution-handling": "3" }
-      ],
+      "score": {
+        "behavioural": 5,
+        "commuication": 4,
+        "sitaution-handling": 3
+      },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     },
     {
       "fullName": "Ashu Sharma",
+      "imgURL": "/public/assets/u6.jpeg",
       "email": "ashu77test@gmail.com",
-      "score": [
-        { "behavioural": "8", "commuication": "6", "sitaution-handling": "7" }
-      ],
+      "score": {
+        "behavioural": 8,
+        "commuication": 6,
+        "sitaution-handling": 7
+      },
       "shortlisted": "",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
-      "experience ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
+      "experience": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "hobbies": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati.",
       "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro odit maxime, tempora nulla obcaecati."
     }
