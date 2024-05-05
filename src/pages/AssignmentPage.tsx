@@ -17,11 +17,9 @@ const AssignmentPage = () => {
   const getCurrentCandidateData = (
     currentCandidateEmail: string,
   ): candidate | undefined => {
-    console.log(currentCandidateEmail);
     const currentCadidate = candidateDabase.candidateData.find(
       (candidate) => candidate.email === currentCandidateEmail,
     );
-    console.log(currentCadidate);
     return currentCadidate;
   };
 

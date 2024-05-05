@@ -3,6 +3,8 @@ import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import candidateDataBase from "./../mockDB/mockCandidateData.json";
 import CandidateCard from "./CandidateCard";
+import { useEffect, useState } from "react";
+import { candidate } from "@/types";
 
 type Props = {
   selectedCandidateEmail: string;
@@ -13,6 +15,32 @@ const AssignmentDetailsCard = ({
   selectedCandidateEmail,
   setSelectedCandidateEmail,
 }: Props) => {
+  const [currentTab, setCurrentTab] = useState("review");
+
+  const getCandidatesAsPerTabSelection = (candidateData: candidate[]) => {
+    if (currentTab === "review") {
+      return candidateData;
+    } else {
+      const shortlistedCandidates = candidateData.filter(
+        (candidate) => candidate.shortlisted === "yes",
+      );
+      return shortlistedCandidates;
+    }
+  };
+
+  const [candidateList, setCandidateList] = useState(
+    getCandidatesAsPerTabSelection(candidateDataBase.candidateData),
+  );
+
+  useEffect(() => {
+    const candidateList = getCandidatesAsPerTabSelection(
+      candidateDataBase.candidateData,
+    );
+    setSelectedCandidateEmail(candidateList[0].email);
+    setCandidateList(candidateList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentTab]);
+
   return (
     <div className="flex-1">
       <Card>
@@ -44,15 +72,17 @@ const AssignmentDetailsCard = ({
           </div>
           <div className="mb-3 flex gap-4">
             <Button
+              onClick={() => setCurrentTab("review")}
               variant={"ghost"}
-              className="flex gap-2 rounded-xl border bg-white text-xs font-bold  text-black shadow-md"
+              className={`flex gap-2 rounded-xl   bg-white text-xs  font-bold text-black ${currentTab === "review" && "border shadow-md"}`}
             >
               <ScanEye size={12} />
               <span>TO REVIEW</span>
             </Button>
             <Button
+              onClick={() => setCurrentTab("shortlist")}
               variant={"ghost"}
-              className="flex gap-2 rounded-xl border bg-white text-xs font-bold   text-black shadow-md"
+              className={`flex gap-2 rounded-xl   bg-white text-xs  font-bold text-black  ${currentTab === "shortlist" && "border shadow-md"}`}
             >
               <FilesIcon size={12} />
               <span>SHORTLISTED</span>
@@ -63,7 +93,7 @@ const AssignmentDetailsCard = ({
             <p>SCORE</p>
           </div>
           <div className="">
-            {candidateDataBase.candidateData.map((candidate) => (
+            {candidateList.map((candidate) => (
               <CandidateCard
                 key={candidate.email}
                 candidate={candidate}

@@ -87,9 +87,11 @@ const CandidateProfileCard = ({ currentCandidate }: Props) => {
               </div>
               <Button
                 variant={"ghost"}
-                className=" mx-auto w-4/5 bg-[#50D1C5] text-white hover:bg-[#4ac1b5] hover:text-white"
+                className={`mx-auto w-4/5  text-white  hover:text-white ${currentCandidate.shortlisted ? " bg-green-500 hover:bg-green-600" : "  bg-[#50D1C5] hover:bg-[#4ac1b5]"}`}
               >
-                SHORTLIST
+                {currentCandidate.shortlisted
+                  ? "SHORTLISTED ALREADY (Remove)"
+                  : "SHORTLIST"}
               </Button>
             </div>
             <div className="flex-1 ">
