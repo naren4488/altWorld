@@ -2,9 +2,15 @@ import { candidate } from "@/types";
 
 type Props = {
   candidate: candidate;
+  selectedCandidateEmail: string;
+  onSelect: (newSelectedCandidateEmail: string) => void;
 };
 
-const CandidateCard = ({ candidate }: Props) => {
+const CandidateCard = ({
+  candidate,
+  onSelect,
+  selectedCandidateEmail,
+}: Props) => {
   const getScore = (candidate: candidate): number => {
     const totalScore =
       candidate.score.behavioural +
@@ -14,7 +20,10 @@ const CandidateCard = ({ candidate }: Props) => {
   };
 
   return (
-    <div className="flex items-center justify-between py-2">
+    <div
+      onClick={() => onSelect(candidate.email)}
+      className={`flex items-center justify-between py-2 hover:cursor-pointer ${selectedCandidateEmail === candidate.email && "bg-gray-200"}`}
+    >
       <div className="flex items-center gap-2">
         <div className=" overflow-hidden rounded-xl">
           <img

@@ -4,7 +4,15 @@ import { Button } from "./ui/button";
 import candidateDataBase from "./../mockDB/mockCandidateData.json";
 import CandidateCard from "./CandidateCard";
 
-const AssignmentDetailsCard = () => {
+type Props = {
+  selectedCandidateEmail: string;
+  setSelectedCandidateEmail: (newSelectedCandidateEmail: string) => void;
+};
+
+const AssignmentDetailsCard = ({
+  selectedCandidateEmail,
+  setSelectedCandidateEmail,
+}: Props) => {
   return (
     <div className="flex-1">
       <Card>
@@ -56,7 +64,12 @@ const AssignmentDetailsCard = () => {
           </div>
           <div className="">
             {candidateDataBase.candidateData.map((candidate) => (
-              <CandidateCard key={candidate.email} candidate={candidate} />
+              <CandidateCard
+                key={candidate.email}
+                candidate={candidate}
+                selectedCandidateEmail={selectedCandidateEmail}
+                onSelect={setSelectedCandidateEmail}
+              />
             ))}
           </div>
         </CardContent>
