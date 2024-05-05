@@ -12,7 +12,7 @@ const AssignmentPage = () => {
       </div>
       <div className="flex flex-1 flex-col">
         <Header />
-        <div className="flex flex-1">
+        <div className="flex flex-1 gap-3">
           <AssignmentDetailsCard />
           <div className="w-2/3 max-sm:hidden">
             <CandidateProfileCard />

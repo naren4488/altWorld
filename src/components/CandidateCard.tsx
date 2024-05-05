@@ -14,7 +14,7 @@ const CandidateCard = ({ candidate }: Props) => {
   };
 
   return (
-    <div className="flex justify-between py-2">
+    <div className="flex items-center justify-between py-2">
       <div className="flex items-center gap-2">
         <div className=" overflow-hidden rounded-xl">
           <img

@@ -1,7 +1,7 @@
 import { FilesIcon, PencilIcon, ScanEye } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import candidateData from "./../mockDB/mockCandidateData.json";
+import candidateDataBase from "./../mockDB/mockCandidateData.json";
 import CandidateCard from "./CandidateCard";
 
 const AssignmentDetailsCard = () => {
@@ -55,7 +55,7 @@ const AssignmentDetailsCard = () => {
             <p>SCORE</p>
           </div>
           <div className="">
-            {candidateData.candidateData.map((candidate) => (
+            {candidateDataBase.candidateData.map((candidate) => (
               <CandidateCard key={candidate.email} candidate={candidate} />
             ))}
           </div>
